@@ -1,14 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <table style="width: 100%; height: 100%">
-      <!-- Your code here -->
-    </table>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Tables</title>
+  <style>
+    /* Basic styling for demonstration */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid #ccc;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    .black-cell {
+      background-color: black;
+      color: white;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Main Table</caption>
+    <tr>
+      <td>
+        <table>
+          <caption>Nested Table 1</caption>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+          </tr>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+          </tr>
+          <tr>
+            <td>Data 3</td>
+            <td>Data 4</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <caption>Nested Table 2</caption>
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+          </tr>
+          <tr>
+            <td>Data A</td>
+            <td>Data B</td>
+          </tr>
+          <tr>
+            <td>Data C</td>
+            <td>Data D</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table>
+          <caption>Nested Table 3</caption>
+          <tr>
+            <th>Header X</th>
+            <th>Header Y</th>
+          </tr>
+          <tr>
+            <td>Data X1</td>
+            <td>Data Y1</td>
+          </tr>
+          <tr>
+            <td>Data X2</td>
+            <td>Data Y2</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <caption>Nested Table 4</caption>
+          <tr>
+            <th>Header Alpha</th>
+            <th>Header Beta</th>
+          </tr>
+          <tr>
+            <td>Data Alpha</td>
+            <td>Data Beta</td>
+          </tr>
+          <tr>
+            <td>Data Gamma</td>
+            <td>Data Delta</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="black-cell">HTML</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
 </html>
